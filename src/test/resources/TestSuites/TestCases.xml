@@ -11,7 +11,7 @@
 		<parameter name="beginDate" value="2022-05-20" />
 		<parameter name="stopDate" value="2022-05-31" />
 		<classes>
-			<class name="com.herokuapp.fierce.GeneralTests">
+			<class name="com.hcl.GeneralTests">
 				<methods>
 					<include name="formPositiveTest"></include>
 				</methods>
@@ -28,7 +28,7 @@
 		<parameter name="beginDate" value="2022-05-20" />
 		<parameter name="stopDate" value="2022-05-31" />
 		<classes>
-			<class name="com.herokuapp.fierce.GeneralTests">
+			<class name="com.hcl.GeneralTests">
 				<methods>
 					<include name="formPositiveTest"></include>
 				</methods>
@@ -45,7 +45,7 @@
 		<parameter name="beginDate" value="2022-05-20" />
 		<parameter name="stopDate" value="2022-05-31" />
 		<classes>
-			<class name="com.herokuapp.fierce.GeneralTests">
+			<class name="com.hcl.GeneralTests">
 				<methods>
 					<include name="formNegativeTest"></include>
 				</methods>
@@ -62,7 +62,7 @@
 		<parameter name="beginDate" value="2022-05-20" />
 		<parameter name="stopDate" value="2022-05-31" />
 		<classes>
-			<class name="com.herokuapp.fierce.GeneralTests">
+			<class name="com.hcl.GeneralTests">
 				<methods>
 					<include name="formPositiveTest"></include>
 				</methods>
@@ -79,7 +79,7 @@
 		<parameter name="beginDate" value="2022-05-20" />
 		<parameter name="stopDate" value="2022-05-31" />
 		<classes>
-			<class name="com.herokuapp.fierce.GeneralTests">
+			<class name="com.hcl.GeneralTests">
 				<methods>
 					<include name="formNegativeTest"></include>
 				</methods>
@@ -96,7 +96,7 @@
 		<parameter name="beginDate" value="2022-05-20" />
 		<parameter name="stopDate" value="2022-05-31" />
 		<classes>
-			<class name="com.herokuapp.fierce.GeneralTests">
+			<class name="com.hcl.GeneralTests">
 				<methods>
 					<include name="formNegativeTest"></include>
 				</methods>
@@ -113,7 +113,7 @@
 		<parameter name="beginDate" value="2022-05-20" />
 		<parameter name="stopDate" value="2022-05-31" />
 		<classes>
-			<class name="com.herokuapp.fierce.GeneralTests">
+			<class name="com.hcl.GeneralTests">
 				<methods>
 					<include name="formPositiveTest"></include>
 				</methods>
@@ -130,7 +130,7 @@
 		<parameter name="beginDate" value="2022-05-20" />
 		<parameter name="stopDate" value="2022-05-31" />
 		<classes>
-			<class name="com.herokuapp.fierce.GeneralTests">
+			<class name="com.hcl.GeneralTests">
 				<methods>
 					<include name="formPositiveTest"></include>
 				</methods>
@@ -147,7 +147,7 @@
 		<parameter name="beginDate" value="2022-05-20" />
 		<parameter name="stopDate" value="2022-05-31" />
 		<classes>
-			<class name="com.herokuapp.fierce.GeneralTests">
+			<class name="com.hcl.GeneralTests">
 				<methods>
 					<include name="formNegativeTest"></include>
 				</methods>
@@ -164,7 +164,7 @@
 		<parameter name="beginDate" value="2022-05-20" />
 		<parameter name="stopDate" value="2022-05-31" />
 		<classes>
-			<class name="com.herokuapp.fierce.GeneralTests">
+			<class name="com.hcl.GeneralTests">
 				<methods>
 					<include name="formNegativeTest"></include>
 				</methods>
@@ -181,7 +181,7 @@
 		<parameter name="beginDate" value="2022-05-20" />
 		<parameter name="stopDate" value="2022-05-31" />
 		<classes>
-			<class name="com.herokuapp.fierce.GeneralTests">
+			<class name="com.hcl.GeneralTests">
 				<methods>
 					<include name="formNegativeTest"></include>
 				</methods>
@@ -198,7 +198,7 @@
 		<parameter name="beginDate" value="2022-05-20" />
 		<parameter name="stopDate" value="2022-05-31" />
 		<classes>
-			<class name="com.herokuapp.fierce.GeneralTests">
+			<class name="com.hcl.GeneralTests">
 				<methods>
 					<include name="formNegativeTest"></include>
 				</methods>
@@ -215,7 +215,7 @@
 		<parameter name="beginDate" value="2022-07-01" />
 		<parameter name="stopDate" value="2022-07-31" />
 		<classes>
-			<class name="com.herokuapp.fierce.GeneralTests">
+			<class name="com.hcl.GeneralTests">
 				<methods>
 					<include name="formPositiveTest"></include>
 				</methods>
@@ -232,7 +232,7 @@
 		<parameter name="beginDate" value="" />
 		<parameter name="stopDate" value="2022-07-31" />
 		<classes>
-			<class name="com.herokuapp.fierce.GeneralTests">
+			<class name="com.hcl.GeneralTests">
 				<methods>
 					<include name="formNegativeTest"></include>
 				</methods>
@@ -249,7 +249,7 @@
 		<parameter name="beginDate" value="2022-07-01" />
 		<parameter name="stopDate" value="2022-08-01" />
 		<classes>
-			<class name="com.herokuapp.fierce.GeneralTests">
+			<class name="com.hcl.GeneralTests">
 				<methods>
 					<include name="formPositiveTest"></include>
 				</methods>
@@ -266,7 +266,7 @@
 		<parameter name="beginDate" value="2022-07-01" />
 		<parameter name="stopDate" value="" />
 		<classes>
-			<class name="com.herokuapp.fierce.GeneralTests">
+			<class name="com.hcl.GeneralTests">
 				<methods>
 					<include name="formNegativeTest"></include>
 				</methods>
@@ -283,7 +283,7 @@
 		<parameter name="beginDate" value="2022-07-01" />
 		<parameter name="stopDate" value="2022-06-01" />
 		<classes>
-			<class name="com.herokuapp.fierce.GeneralTests">
+			<class name="com.hcl.GeneralTests">
 				<methods>
 					<include name="formNegativeTest"></include>
 				</methods>
@@ -300,7 +300,7 @@
 		<parameter name="beginDate" value="2022-07-01" />
 		<parameter name="stopDate" value="2022-08-01" />
 		<classes>
-			<class name="com.herokuapp.fierce.GeneralTests">
+			<class name="com.hcl.GeneralTests">
 				<methods>
 					<include name="formPositiveTest"></include>
 				</methods>
@@ -317,7 +317,7 @@
 		<parameter name="beginDate" value="2022-07-01" />
 		<parameter name="stopDate" value="2022-08-01" />
 		<classes>
-			<class name="com.herokuapp.fierce.GeneralTests">
+			<class name="com.hcl.GeneralTests">
 				<methods>
 					<include name="formPositiveTest"></include>
 				</methods>
@@ -334,7 +334,7 @@
 		<parameter name="beginDate" value="2022-07-01" />
 		<parameter name="stopDate" value="2022-08-01" />
 		<classes>
-			<class name="com.herokuapp.fierce.GeneralTests">
+			<class name="com.hcl.GeneralTests">
 				<methods>
 					<include name="formNegativeTest"></include>
 				</methods>
@@ -351,7 +351,7 @@
 		<parameter name="beginDate" value="2022-07-01" />
 		<parameter name="stopDate" value="2022-08-01" />
 		<classes>
-			<class name="com.herokuapp.fierce.GeneralTests">
+			<class name="com.hcl.GeneralTests">
 				<methods>
 					<include name="formPositiveTest"></include>
 				</methods>
@@ -369,7 +369,7 @@
 		<parameter name="beginDate" value="2022-07-01" />
 		<parameter name="stopDate" value="2022-08-01" />
 		<classes>
-			<class name="com.herokuapp.fierce.GeneralTests">
+			<class name="com.hcl.GeneralTests">
 				<methods>
 					<include name="updateId"></include>
 				</methods>

@@ -1,4 +1,4 @@
-package com.herokuapp.fierce;
+package com.hcl;
 
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
@@ -23,18 +23,18 @@ public class GeneralTests {
 
 		switch (browser) {
 		case "firefox":
-			System.setProperty("webdriver.gecko.driver", "src/main/resources/geckodriver");
+			System.setProperty("webdriver.gecko.driver", "src/main/resources/geckodriver.exe");
 			driver = new FirefoxDriver();
 			break;
 			
 		case "chrome":
-			System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver");
+			System.setProperty("webdriver.chrome.driver", "src/main/resources/geckodriver.exe");
 			driver = new ChromeDriver();
 			break;
 
 		default:
 			System.out.println("Do not know how to start " + browser + ", starting firefox");
-			System.setProperty("webdriver.gecko.driver", "src/main/resources/geckodriver");
+			System.setProperty("webdriver.gecko.driver", "src/main/resources/geckodriver.exe");
 			driver = new FirefoxDriver();
 			break;
 		}
