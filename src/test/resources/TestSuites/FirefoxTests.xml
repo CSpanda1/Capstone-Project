@@ -5,7 +5,7 @@
 	<test name="Firefox Tests">
 		<parameter name="browser" value="firefox"></parameter>
 		<classes>
-			<class name="com.midterm.demo.MidTermDemo">
+			<class name="com.hcl.MidTermDemo">
 				<methods>
                    <!-- <exclude name="timeOutTest"></exclude> -->
                    <!--     <include name="noSuchElementTest"></include> -->
