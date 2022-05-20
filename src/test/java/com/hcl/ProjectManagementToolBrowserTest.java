@@ -7,9 +7,11 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 
 public class ProjectManagementToolBrowserTest {
+	private WebDriver driver;
 
     @Test
     public void chromeTest()
@@ -18,7 +20,7 @@ public class ProjectManagementToolBrowserTest {
 
         //Create driver
         System.setProperty("webdriver.chrome.driver","src/main/resources/chromedriver.exe" );
-        WebDriver driver = new ChromeDriver();
+        driver = new ChromeDriver();
 
         //Maximize browser window
 
@@ -28,9 +30,9 @@ public class ProjectManagementToolBrowserTest {
         String url = "https://fierce-shelf-03672.herokuapp.com";
         driver.get(url);
 
-        // sleep of 2 seconds
+        // sleep of 1 second
         try {
-            Thread.sleep(2000);
+            Thread.sleep(1000);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
@@ -44,11 +46,6 @@ public class ProjectManagementToolBrowserTest {
 
         Assert.assertTrue(actualErrorMessage.contains(expectedWord), "Actual error message does not contain expected. " +
                 "\nActual: " + actualErrorMessage + "\nExpected: " + expectedWord);
-
-        //Quit driver
-
-        driver.quit();
-
     }
 
     @Test
@@ -58,7 +55,7 @@ public class ProjectManagementToolBrowserTest {
 
         //Create driver
         System.setProperty("webdriver.gecko.driver","src/main/resources/geckodriver.exe" );
-        WebDriver driver = new FirefoxDriver();
+        driver = new FirefoxDriver();
 
         //Maximize browser window
 
@@ -76,10 +73,6 @@ public class ProjectManagementToolBrowserTest {
 
         Assert.assertTrue(actualErrorMessage.contains(expectedWord), "Actual error message does not contain expected. " +
                 "\nActual: " + actualErrorMessage + "\nExpected: " + expectedWord);
-
-        //Quit driver
-
-        driver.quit();
     }
 
     @Test
@@ -89,14 +82,14 @@ public class ProjectManagementToolBrowserTest {
 
         //Create driver
         System.setProperty("webdriver.edge.driver","src/main/resources/msedgedriver.exe" );
-        WebDriver driver = new EdgeDriver();
+        driver = new EdgeDriver();
 
         //Maximize browser window
 
         driver.manage().window().maximize();
 
         try {
-            Thread.sleep(2000);
+            Thread.sleep(1000);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
@@ -113,9 +106,11 @@ public class ProjectManagementToolBrowserTest {
 
         Assert.assertTrue(actualErrorMessage.contains(expectedWord), "Actual error message does not contain expected. " +
                 "\nActual: " + actualErrorMessage + "\nExpected: " + expectedWord);
-
-        //Quit driver
-        driver.quit();
-
     }
+    
+    @AfterMethod(alwaysRun = true)
+	private void tearDown() {
+		driver.quit();
+	}
+    
 }

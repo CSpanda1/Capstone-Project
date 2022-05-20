@@ -16,8 +16,8 @@ public class ProjectManagementToolPositiveTests
 
         WebDriver driver = getWebDriver();
 
-        // sleep of 2 seconds
-        sleep(2000);
+        // sleep of 1 second
+        sleep(1000);
 
         //Click create project
         WebElement clickCreateProject = driver.findElement(By.xpath("/html//div[@id='root']/div[@class='App']//a[@href='/addProject']"));
@@ -38,7 +38,7 @@ public class ProjectManagementToolPositiveTests
 
         WebDriver driver = getWebDriver();
 
-        sleep(2000);
+        sleep(1000);
 
         //Click create project
         WebElement clickCreateProject = driver.findElement(By.xpath("/html//div[@id='root']/div[@class='App']//a[@href='/addProject']"));
@@ -72,7 +72,7 @@ public class ProjectManagementToolPositiveTests
         submitButton.click();
 
         //Sleep
-        sleep(2000);
+        sleep(1000);
 
         //Verification
         String expectedUrl = "https://fierce-shelf-03672.herokuapp.com/dashboard";
@@ -90,7 +90,7 @@ public class ProjectManagementToolPositiveTests
 
         WebDriver driver = getWebDriver();
 
-        sleep(2000);
+        sleep(1000);
 
         //Click sign up
         WebElement clickCreateProject = driver.findElement(By.linkText("Sign Up"));
@@ -115,7 +115,7 @@ public class ProjectManagementToolPositiveTests
 
         WebDriver driver = getWebDriver();
 
-        sleep(2000);
+        sleep(1000);
 
         //Click Login page
         WebElement clickCreateProject = driver.findElement(By.linkText("Login"));
@@ -142,7 +142,7 @@ public class ProjectManagementToolPositiveTests
         WebDriver driver = getWebDriver();
 
         //sleep
-        sleep(2000);
+        sleep(1000);
 
         //Click Update project
         WebElement clickCreateProject = driver.findElement(By.xpath("/html//div[@id='root']/div[@class='App']/div[@class='projects']/div[@class='container']//ul[@class='list-group']/a[@href='/updateProject/TEST1']//i[@class='fa fa-edit pr-1']"));

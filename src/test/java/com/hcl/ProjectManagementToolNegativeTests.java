@@ -1,5 +1,6 @@
 package com.hcl;
 
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -11,7 +12,7 @@ public class ProjectManagementToolNegativeTests
 {
 
 
-    @Test
+    @Test(priority = 1)
     public void createProjectForm13()
     {
         //This method check to see if a duplicate unique id can be created
@@ -55,7 +56,7 @@ public class ProjectManagementToolNegativeTests
         submitButton.click();
 
         //Sleep
-        sleep(2000);
+        sleep(1000);
 
         //Verifications
         WebElement errorMessage = driver.findElement(By.xpath("/html//div[@id='root']/div[@class='App']//div[@class='project']//form//div[@class='invalid-feedback']"));
@@ -64,10 +65,33 @@ public class ProjectManagementToolNegativeTests
 
         Assert.assertTrue(actualErrorMessage.contains(expectedErrorMessage), "Actual error message does not contain expected. " +
                 "\nActual: " + actualErrorMessage + "\nExpected: " + expectedErrorMessage);
-
-
-        //driver quit
+        
         quitDriver(driver);
+
+    }
+    
+    @Test(priority = 2)
+    public void deleteProject() {
+    	//Web driver
+        WebDriver driver = getWebDriver();
+        
+        //sleep
+        sleep(2000);
+    	
+    	WebElement deleteProject = driver.findElement(By.xpath("//li[@class='list-group-item delete']"));
+		deleteProject.click();
+
+		sleep(0500);
+	
+		Alert alert = driver.switchTo().alert();
+
+		sleep(0500);
+
+		alert.accept();
+	
+		sleep(0500);
+		
+		quitDriver(driver);
     }
 
 
