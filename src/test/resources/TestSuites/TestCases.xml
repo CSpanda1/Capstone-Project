@@ -121,7 +121,7 @@
 		</classes>
 	</test>
 	
-	<test name="TC_Create Project Form_09">
+	<!-- <test name="TC_Create Project Form_09">
 		<parameter name="browser" value="firefox" />
 		<parameter name="testName" value="TC_Create Project Form_09" />
 		<parameter name="name" value="TC09" />
@@ -136,7 +136,7 @@
 				</methods>
 			</class>
 		</classes>
-	</test>
+	</test> -->
 	
 	<test name="TC_Create Project Form_10">
 		<parameter name="browser" value="firefox" />
