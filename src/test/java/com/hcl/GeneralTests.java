@@ -28,7 +28,7 @@ public class GeneralTests {
 			break;
 			
 		case "chrome":
-			System.setProperty("webdriver.chrome.driver", "src/main/resources/geckodriver.exe");
+			System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver.exe");
 			driver = new ChromeDriver();
 			break;
 
