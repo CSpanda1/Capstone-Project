@@ -22,7 +22,7 @@ public class ProjectManagementToolNegativeTests
         WebDriver driver = getWebDriver();
 
         //sleep
-        sleep(2000);
+        sleep(1000);
 
         //Click create project
         WebElement clickCreateProject = driver.findElement(By.xpath("/html//div[@id='root']/div[@class='App']//a[@href='/addProject']"));

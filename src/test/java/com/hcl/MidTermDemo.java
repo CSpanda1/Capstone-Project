@@ -136,12 +136,12 @@ public class MidTermDemo {
 		WebElement submitButton = driver.findElement(By.xpath("//input[@class='btn btn-primary btn-block mt-4']"));
 		submitButton.click();
 		
-		sleep(2000);
+		sleep(1000);
 		
 		WebElement updateButton = driver.findElement(By.xpath("//a[@href='/updateProject/12345']"));
 		updateButton.click();
 		
-		sleep(2000);
+		sleep(1000);
 		
 		WebElement updateDescript = driver.findElement(By.name("description"));
 		// The next two lines are to clear the input field
@@ -149,12 +149,12 @@ public class MidTermDemo {
 		updateDescript.sendKeys(Keys.DELETE);
 		updateDescript.sendKeys("Update Description Test");
 		
-		sleep(2000);
+		sleep(1000);
 		
 		WebElement submitUpdateButton = driver.findElement(By.xpath("//input[@class='btn btn-primary btn-block mt-4']"));
 		submitUpdateButton.click();
 		
-		sleep(2000);
+		sleep(1000);
 		
 		
 		WebElement deleteProject = driver.findElement(By.xpath("//li[@class='list-group-item delete']"));
@@ -168,12 +168,12 @@ public class MidTermDemo {
         		
         // Displaying alert message		
         System.out.println(alertMessage);	
-        sleep(2000);
+        sleep(1000);
         		
         // This makes it click OK, I believe alert.dismiss() makes it hit Cancel		
         alert.accept();		
         
-        sleep(2000);
+        sleep(1000);
 		
 		
 		
@@ -194,7 +194,7 @@ public class MidTermDemo {
 		
 		System.out.println("Page is opened");
 		
-		sleep(2000);
+		sleep(1000);
 		
 		WebElement createProjectButton = driver.findElement(By.xpath("//a[@class='btn btn-lg btn-info']"));
 		createProjectButton.click();
@@ -219,7 +219,7 @@ public class MidTermDemo {
 		WebElement submitButton = driver.findElement(By.xpath("//input[@class='btn btn-primary btn-block mt-4']"));
 		submitButton.click();
 		
-		sleep(2000);
+		sleep(1000);
 		
 		WebElement updateButton = driver.findElement(By.xpath("//a[@href='/updateProject/12345']"));
 		Assert.assertTrue(updateButton.isDisplayed(), "The project is not visible");
@@ -237,12 +237,12 @@ public class MidTermDemo {
         		
         // Displaying alert message		
         System.out.println(alertMessage);	
-        sleep(2000);
+        sleep(1000);
         		
         // This makes it click OK, I believe alert.dismiss() makes it hit Cancel		
         alert.accept();		
         
-        sleep(2000);
+        sleep(1000);
 		
         try {
 		Assert.assertFalse(driver.findElement(By.xpath("//a[@href='/updateProject/12345']")).isDisplayed(), "The project is still there");
@@ -265,7 +265,7 @@ public class MidTermDemo {
 		
 		System.out.println("Page is opened");
 		
-		sleep(2000);
+		sleep(1000);
 		
 		WebElement createProjectButton = driver.findElement(By.xpath("//a[@class='btn btn-lg btn-info']"));
 		createProjectButton.click();
@@ -290,7 +290,7 @@ public class MidTermDemo {
 		WebElement submitButton = driver.findElement(By.xpath("//input[@class='btn btn-primary btn-block mt-4']"));
 		submitButton.click();
 		
-		sleep(2000);
+		sleep(1000);
 		
 		WebElement updateButton = driver.findElement(By.xpath("//a[@href='/updateProject/12345']"));
 		Assert.assertTrue(updateButton.isDisplayed(), "The project is not visible");
@@ -308,7 +308,7 @@ public class MidTermDemo {
         		
         // Displaying alert message		
         System.out.println(alertMessage);	
-        sleep(2000);
+        sleep(1000);
         		
         // This makes it click OK, I believe alert.dismiss() makes it hit Cancel		
         alert.dismiss();
@@ -316,7 +316,7 @@ public class MidTermDemo {
         Assert.assertTrue(driver.findElement(By.xpath("//a[@href='/updateProject/12345']")).isDisplayed(), "The project is not there");
         System.out.println("The project is still there");
         
-        sleep(2000);
+        sleep(1000);
         
         WebElement deleteProject1 = driver.findElement(By.xpath("//li[@class='list-group-item delete']"));
 		deleteProject1.click();
@@ -326,7 +326,7 @@ public class MidTermDemo {
         		
         // Displaying alert message		
         System.out.println(alertMessage1);	
-        sleep(2000);
+        sleep(1000);
         		
         // This makes it click OK, I believe alert.dismiss() makes it hit Cancel		
         alert.accept();
@@ -346,7 +346,7 @@ public class MidTermDemo {
 		Assert.assertEquals(actualUrl1, expectedUrl1, "This is not actually the web page that it was asserted it be");
 		System.out.println("dashboard url");
 		
-		sleep(2000);
+		sleep(1000);
 		
 		WebElement registerButton = driver.findElement(By.xpath("//a[@href='register.html']"));
 		registerButton.click();
@@ -356,7 +356,7 @@ public class MidTermDemo {
 		Assert.assertEquals(actualUrl, expectedUrl, "This is not actually the web page that it was asserted it be");
 		System.out.println("Sign up url");
 		
-		sleep(2000);
+		sleep(1000);
 		
 		}
 		
@@ -373,7 +373,7 @@ public class MidTermDemo {
 		Assert.assertEquals(actualUrl1, expectedUrl1, "This is not actually the web page that it was asserted it be");
 		System.out.println("dashboard url");
 		
-		sleep(2000);
+		sleep(1000);
 		
 		WebElement loginButton = driver.findElement(By.xpath("//a[@href='login.html']"));
 		loginButton.click();
@@ -383,7 +383,7 @@ public class MidTermDemo {
 		Assert.assertEquals(actualUrl, expectedUrl, "This is not actually the web page that it was asserted it be");
 		System.out.println("Login url");
 		
-		sleep(2000);
+		sleep(1000);
 		
 		}
 		
@@ -400,7 +400,7 @@ public class MidTermDemo {
 		Assert.assertEquals(actualUrl1, expectedUrl1, "This is not actually the web page that it was asserted it be");
 		System.out.println("dashboard url");
 		
-		sleep(2000);
+		sleep(1000);
 		
 		WebElement createProjectButton = driver.findElement(By.xpath("//a[@href='/addProject']"));
 		createProjectButton.click();
@@ -410,7 +410,7 @@ public class MidTermDemo {
 		Assert.assertEquals(actualUrl, expectedUrl, "This is not actually the web page that it was asserted it be");
 		System.out.println("Create project url");
 		
-		sleep(2000);
+		sleep(1000);
 		
 		}
 		
@@ -430,7 +430,7 @@ public class MidTermDemo {
 		Assert.assertEquals(actualUrl1, expectedUrl1, "This is not actually the web page that it was asserted it be");
 		System.out.println("create project url");
 		
-		sleep(2000);
+		sleep(1000);
 		
 		WebElement dashboardButton = driver.findElement(By.xpath("//a[@href='/dashboard']"));
 		dashboardButton.click();
@@ -440,7 +440,7 @@ public class MidTermDemo {
 		Assert.assertEquals(actualUrl, expectedUrl, "This is not actually the web page that it was asserted it be");
 		System.out.println("dashboard url");
 		
-		sleep(2000);
+		sleep(1000);
 		
 		}
 		
@@ -457,7 +457,7 @@ public class MidTermDemo {
 		Assert.assertEquals(actualUrl1, expectedUrl1, "This is not actually the web page that it was asserted it be");
 		System.out.println("dashboard url");
 		
-		sleep(2000);
+		sleep(1000);
 		
 		WebElement createProjectButton = driver.findElement(By.xpath("//a[@href='Dashboard.html']"));
 		createProjectButton.click();
@@ -467,7 +467,7 @@ public class MidTermDemo {
 		Assert.assertEquals(actualUrl, expectedUrl, "This is not actually the web page that it was asserted it be");
 		System.out.println("Personal Project management url");
 		
-		sleep(2000);
+		sleep(1000);
 		
 		}
 		
@@ -502,12 +502,12 @@ public class MidTermDemo {
 		WebElement submitButton = driver.findElement(By.xpath("//input[@class='btn btn-primary btn-block mt-4']"));
 		submitButton.click();
 		
-		sleep(2000);
+		sleep(1000);
 		
 		WebElement updateButton = driver.findElement(By.xpath("//a[@href='/updateProject/12345']"));
 		updateButton.click();
 		
-		sleep(2000);
+		sleep(1000);
 		
 		WebElement updateEndDate = driver.findElement(By.name("end_date"));
 		// The next two lines are to clear the input field
@@ -515,12 +515,12 @@ public class MidTermDemo {
 		updateEndDate.sendKeys(Keys.DELETE);
 		updateEndDate.sendKeys("06/23/2022");
 		
-		sleep(2000);
+		sleep(1000);
 		
 		WebElement submitUpdateButton = driver.findElement(By.xpath("//input[@class='btn btn-primary btn-block mt-4']"));
 		submitUpdateButton.click();
 		
-		sleep(2000);
+		sleep(1000);
 		
 		WebElement deleteProject = driver.findElement(By.xpath("//li[@class='list-group-item delete']"));
 		deleteProject.click();
@@ -533,12 +533,12 @@ public class MidTermDemo {
         		
         // Displaying alert message		
         System.out.println(alertMessage);	
-        sleep(2000);
+        sleep(1000);
         		
         // This makes it click OK, I believe alert.dismiss() makes it hit Cancel		
         alert.accept();		
         
-        sleep(2000);
+        sleep(1000);
 		
 		}
 		
@@ -573,12 +573,12 @@ public class MidTermDemo {
 		WebElement submitButton = driver.findElement(By.xpath("//input[@class='btn btn-primary btn-block mt-4']"));
 		submitButton.click();
 		
-		sleep(2000);
+		sleep(1000);
 		
 		WebElement updateButton = driver.findElement(By.xpath("//a[@href='/updateProject/12345']"));
 		updateButton.click();
 		
-		sleep(2000);
+		sleep(1000);
 		
 		WebElement updateStartDate = driver.findElement(By.name("start_date"));
 		// The next two lines are to clear the input field
@@ -586,12 +586,12 @@ public class MidTermDemo {
 		updateStartDate.sendKeys(Keys.DELETE);
 		updateStartDate.sendKeys("07/04/2022");
 		
-		sleep(2000);
+		sleep(1000);
 		
 		WebElement submitUpdateButton = driver.findElement(By.xpath("//input[@class='btn btn-primary btn-block mt-4']"));
 		submitUpdateButton.click();
 		
-		sleep(2000);
+		sleep(1000);
 		
 		WebElement deleteProject = driver.findElement(By.xpath("//li[@class='list-group-item delete']"));
 		deleteProject.click();
@@ -604,12 +604,12 @@ public class MidTermDemo {
         		
         // Displaying alert message		
         System.out.println(alertMessage);	
-        sleep(2000);
+        sleep(1000);
         		
         // This makes it click OK, I believe alert.dismiss() makes it hit Cancel		
         alert.accept();		
         
-        sleep(2000);
+        sleep(1000);
 		
 		}
 		
@@ -644,12 +644,12 @@ public class MidTermDemo {
 		WebElement submitButton = driver.findElement(By.xpath("//input[@class='btn btn-primary btn-block mt-4']"));
 		submitButton.click();
 		
-		sleep(2000);
+		sleep(1000);
 		
 		WebElement updateButton = driver.findElement(By.xpath("//a[@href='/updateProject/12345']"));
 		updateButton.click();
 		
-		sleep(2000);
+		sleep(1000);
 		
 		WebElement resizeThis = driver.findElement(By.xpath("//textarea[@placeholder='Project Description']"));
 		
@@ -661,7 +661,7 @@ public class MidTermDemo {
 		action.moveByOffset(0, -100); 
 		action.release();
 		action.perform();
-		sleep(2000);
+		sleep(1000);
 		
 		WebElement submitUpdateButton = driver.findElement(By.xpath("//input[@class='btn btn-primary btn-block mt-4']"));
 		submitUpdateButton.click();
@@ -677,12 +677,12 @@ public class MidTermDemo {
         		
         // Displaying alert message		
         System.out.println(alertMessage);	
-        sleep(2000);
+        sleep(1000);
         		
         // This makes it click OK, I believe alert.dismiss() makes it hit Cancel		
         alert.accept();		
         
-        sleep(2000);
+        sleep(1000);
 		
 		}
 		
