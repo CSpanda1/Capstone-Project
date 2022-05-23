@@ -205,7 +205,7 @@ public class MidTermDemo {
 		projectName.sendKeys("Test Deletion");
 		
 		WebElement projectId = driver.findElement(By.name("projectIdentifier"));
-		projectId.sendKeys("12345");
+		projectId.sendKeys("23456");
 		
 		WebElement projectDescript = driver.findElement(By.name("description"));
 		projectDescript.sendKeys("Testing if deletion is working properly");
@@ -221,7 +221,7 @@ public class MidTermDemo {
 		
 		sleep(1000);
 		
-		WebElement updateButton = driver.findElement(By.xpath("//a[@href='/updateProject/12345']"));
+		WebElement updateButton = driver.findElement(By.xpath("//a[@href='/updateProject/23456']"));
 		Assert.assertTrue(updateButton.isDisplayed(), "The project is not visible");
 		
 		System.out.println("The project is visible");
@@ -245,7 +245,7 @@ public class MidTermDemo {
         sleep(1000);
 		
         try {
-		Assert.assertFalse(driver.findElement(By.xpath("//a[@href='/updateProject/12345']")).isDisplayed(), "The project is still there");
+		Assert.assertFalse(driver.findElement(By.xpath("//a[@href='/updateProject/23456']")).isDisplayed(), "The project is still there");
 		}
         catch(NoSuchElementException e) {
         	
@@ -276,7 +276,7 @@ public class MidTermDemo {
 		projectName.sendKeys("Test Deletion");
 		
 		WebElement projectId = driver.findElement(By.name("projectIdentifier"));
-		projectId.sendKeys("12345");
+		projectId.sendKeys("34567");
 		
 		WebElement projectDescript = driver.findElement(By.name("description"));
 		projectDescript.sendKeys("Testing if deletion is working properly");
@@ -292,7 +292,7 @@ public class MidTermDemo {
 		
 		sleep(1000);
 		
-		WebElement updateButton = driver.findElement(By.xpath("//a[@href='/updateProject/12345']"));
+		WebElement updateButton = driver.findElement(By.xpath("//a[@href='/updateProject/34567']"));
 		Assert.assertTrue(updateButton.isDisplayed(), "The project is not visible");
 		
 		System.out.println("The project is visible");
@@ -313,7 +313,7 @@ public class MidTermDemo {
         // This makes it click OK, I believe alert.dismiss() makes it hit Cancel		
         alert.dismiss();
         
-        Assert.assertTrue(driver.findElement(By.xpath("//a[@href='/updateProject/12345']")).isDisplayed(), "The project is not there");
+        Assert.assertTrue(driver.findElement(By.xpath("//a[@href='/updateProject/34567']")).isDisplayed(), "The project is not there");
         System.out.println("The project is still there");
         
         sleep(1000);
@@ -488,7 +488,7 @@ public class MidTermDemo {
 		projectName.sendKeys("Amazing new project");
 		
 		WebElement projectId = driver.findElement(By.name("projectIdentifier"));
-		projectId.sendKeys("12345");
+		projectId.sendKeys("45678");
 		
 		WebElement projectDescript = driver.findElement(By.name("description"));
 		projectDescript.sendKeys("An incredible project collaboration between the HCL testing team");
@@ -504,7 +504,7 @@ public class MidTermDemo {
 		
 		sleep(1000);
 		
-		WebElement updateButton = driver.findElement(By.xpath("//a[@href='/updateProject/12345']"));
+		WebElement updateButton = driver.findElement(By.xpath("//a[@href='/updateProject/45678']"));
 		updateButton.click();
 		
 		sleep(1000);
@@ -559,7 +559,7 @@ public class MidTermDemo {
 		projectName.sendKeys("Amazing new project");
 		
 		WebElement projectId = driver.findElement(By.name("projectIdentifier"));
-		projectId.sendKeys("12345");
+		projectId.sendKeys("56789");
 		
 		WebElement projectDescript = driver.findElement(By.name("description"));
 		projectDescript.sendKeys("An incredible project collaboration between the HCL testing team");
@@ -575,7 +575,7 @@ public class MidTermDemo {
 		
 		sleep(1000);
 		
-		WebElement updateButton = driver.findElement(By.xpath("//a[@href='/updateProject/12345']"));
+		WebElement updateButton = driver.findElement(By.xpath("//a[@href='/updateProject/56789']"));
 		updateButton.click();
 		
 		sleep(1000);
@@ -630,7 +630,7 @@ public class MidTermDemo {
 		projectName.sendKeys("Amazing new project");
 		
 		WebElement projectId = driver.findElement(By.name("projectIdentifier"));
-		projectId.sendKeys("12345");
+		projectId.sendKeys("67890");
 		
 		WebElement projectDescript = driver.findElement(By.name("description"));
 		projectDescript.sendKeys("An incredible project collaboration between the HCL testing team");
@@ -646,7 +646,7 @@ public class MidTermDemo {
 		
 		sleep(1000);
 		
-		WebElement updateButton = driver.findElement(By.xpath("//a[@href='/updateProject/12345']"));
+		WebElement updateButton = driver.findElement(By.xpath("//a[@href='/updateProject/67890']"));
 		updateButton.click();
 		
 		sleep(1000);
