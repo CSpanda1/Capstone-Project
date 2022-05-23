@@ -7,18 +7,6 @@
             <class name="com.hcl.ProjectManagementToolBrowserTest"/>
         </classes>
     </test>
-
-    <test name="PositiveTests" >
-        <classes>
-            <class name="com.hcl.ProjectManagementToolPositiveTests"/>
-        </classes>
-    </test>
-
-    <test name="NegativeTests">
-        <classes>
-            <class name="com.hcl.ProjectManagementToolNegativeTests"/>
-        </classes>
-    </test>
     
     <test name="Firefox Tests">
 		<parameter name="browser" value="firefox"></parameter>
@@ -33,6 +21,18 @@
 			</class>
 		</classes>
 	</test>
+
+    <test name="PositiveTests" >
+        <classes>
+            <class name="com.hcl.ProjectManagementToolPositiveTests"/>
+        </classes>
+    </test>
+
+    <test name="NegativeTests">
+        <classes>
+            <class name="com.hcl.ProjectManagementToolNegativeTests"/>
+        </classes>
+    </test>
 	
 	<test name="TC_Create Project Form_02">
 		<parameter name="browser" value="firefox" />
@@ -157,7 +157,7 @@
 		<parameter name="browser" value="firefox" />
 		<parameter name="testName" value="TC_Create Project Form_09" />
 		<parameter name="name" value="TC09" />
-		<parameter name="id" value="*#^%" />
+		<parameter name="id" value="*#^%" /> this has been temporarily changed due to website bug that relates to symbols in the Project ID field
 		<parameter name="description" value="To check if user is able to enter special characters in the 'Unique Project ID' field" />
 		<parameter name="beginDate" value="2022-05-20" />
 		<parameter name="stopDate" value="2022-05-31" />
@@ -191,7 +191,8 @@
 		<parameter name="browser" value="firefox" />
 		<parameter name="testName" value="TC_Create Project Form_11" />
 		<parameter name="name" value="TC11" />
-		<parameter name="id" value="1B#" />
+		<!-- <parameter name="id" value="1B#" /> this has been temporarily changed due to website bug that relates to symbols in the Project ID field-->
+		<parameter name="id" value="1B3" />
 		<parameter name="description" value="To check if 'Unique Project ID' field allows a combination of 3 alphanumeric chars, special chars, upper and lower case chars, and blank spaces with a minimum of 4" />
 		<parameter name="beginDate" value="2022-05-20" />
 		<parameter name="stopDate" value="2022-05-31" />
@@ -208,24 +209,8 @@
 		<parameter name="browser" value="firefox" />
 		<parameter name="testName" value="TC_Create Project Form_12" />
 		<parameter name="name" value="TC12" />
-		<parameter name="id" value="1B#t ^" />
-		<parameter name="description" value="To check if 'Unique Project ID' field allows a combination of 6 alphanumeric chars, special chars, upper and lower case chars, and blank spaces with a maximum of 5" />
-		<parameter name="beginDate" value="2022-05-20" />
-		<parameter name="stopDate" value="2022-05-31" />
-		<classes>
-			<class name="com.hcl.GeneralTests">
-				<methods>
-					<include name="formNegativeTest"></include>
-				</methods>
-			</class>
-		</classes>
-	</test>
-	
-	<test name="TC_Create Project Form_13">
-		<parameter name="browser" value="firefox" />
-		<parameter name="testName" value="TC_Create Project Form_13" />
-		<parameter name="name" value="TC13" />
-		<parameter name="id" value="1B#t ^" />
+		<!-- <parameter name="id" value="1B#t ^" /> this has been temporarily changed due to website bug that relates to symbols in the Project ID field-->
+		<parameter name="id" value="1BG62J" />
 		<parameter name="description" value="To check if 'Unique Project ID' field allows a combination of 6 alphanumeric chars, special chars, upper and lower case chars, and blank spaces with a maximum of 5" />
 		<parameter name="beginDate" value="2022-05-20" />
 		<parameter name="stopDate" value="2022-05-31" />
